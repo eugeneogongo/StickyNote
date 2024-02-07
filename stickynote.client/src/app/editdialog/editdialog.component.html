@@ -1,0 +1,7 @@
+<div class="edit-form">
+  <form [formGroup]="editForm" (ngSubmit)="submitForm()">
+    <input type="text" class="note-title" placeholder="Title"  formControlName="title"   required />
+      <textarea class="note-text text-area"   type="text" formControlName="description" placeholder="Take a note..." ></textarea>
+      <button class="close-btn" type="submit">save</button>
+  </form>
+</div>

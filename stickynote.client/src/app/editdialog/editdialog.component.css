@@ -1,0 +1,12 @@
+.text-area{
+  height: 25vh;
+  text-align: justify;
+  resize: none;
+  overflow: hidden;
+
+}
+.edit-form{
+  margin: 10px;
+}
+
+

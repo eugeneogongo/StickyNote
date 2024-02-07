@@ -1,0 +1,26 @@
+.pop-up {
+  animation: pop-up 0.3s ease-in-out;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-card {
+  width: 300px; /* Adjust the width as per your requirement */
+  height: 100px; /* Set the card height to 100px */
+  background-color: antiquewhite;
+  margin: 20px;
+}
+
+

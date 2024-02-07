@@ -1,0 +1,9 @@
+<div class="form-container active-form">
+  <form #form="ngForm" (ngSubmit)="submitForm(form)">
+    <input type="text" class="note-title" placeholder="Title" name="title" ngModel  required (focus)="showDescription($event)" />
+    <ng-container *ngIf="showDesc">
+      <textarea class="note-text"  type="text" name="description" ngModel  placeholder="Take a note..." ></textarea>
+      <button class="close-btn" type="submit">Save</button>
+    </ng-container>
+  </form>
+</div>

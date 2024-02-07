@@ -1,0 +1,22 @@
+<div class="grid-container" *ngIf="allnotes.length>0">
+<div *ngFor="let note of allnotes" class="grid-item" >
+  <div class="card-container" style="max-width: 400px !important;">
+    <div (click)="shownote(note)">
+
+  <p class="card-title">{{note.title}}</p>
+    <p class="note-text">{{note.description}}</p>
+    </div>
+    <div class="grid-container">
+    <p class="footer-date">{{note.lastModifiedDate | date: 'dd-MM-yyyy HH:mm' }} <mat-icon (click)="delete(note.id)">delete</mat-icon></p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="text-center-container" *ngIf="allnotes.length==0">
+
+ <p>No Notes Yet</p>
+</div>
+
