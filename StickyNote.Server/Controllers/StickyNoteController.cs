@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StickyNote.Server.DAL;
-using StickyNote.Server.NewFolder;
+using StickyNote.Server.Models;
 
 namespace StickyNote.Server.Controllers
 {

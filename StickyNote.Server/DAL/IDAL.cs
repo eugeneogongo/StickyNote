@@ -1,8 +1,8 @@
-﻿using StickyNote.Server.NewFolder;
+﻿using StickyNote.Server.Models;
 
 namespace StickyNote.Server.DAL
 {
-   public interface IDAL<Tmodel> where Tmodel : BaseModel
+    public interface IDAL<Tmodel> where Tmodel : BaseModel
     {
         public Task<Tmodel> CreateAsync(Tmodel model, CancellationToken token);
         public Task<Tmodel> UpdateAsync(Tmodel oldModel, Tmodel newModel, CancellationToken token);

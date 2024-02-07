@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StickyNote.Server.NewFolder;
+using StickyNote.Server.Models;
 
 namespace StickyNote.Server.DAL
 {
