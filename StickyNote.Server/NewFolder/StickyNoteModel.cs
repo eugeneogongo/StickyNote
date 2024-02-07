@@ -8,7 +8,7 @@ namespace StickyNote.Server.NewFolder
         [Required]
         [MaxLength(120)]
         public string Title { get; set; }
-        [MaxLength(1024)]
+        [MaxLength(10024)]
         public string Description { get; set; }
       
     }
