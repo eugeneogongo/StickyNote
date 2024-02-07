@@ -1,5 +1,6 @@
 
 using StickyNote.Server.DAL;
+using StickyNote.Server.Middlewares;
 using StickyNote.Server.Models;
 
 namespace StickyNote.Server
@@ -22,6 +23,12 @@ namespace StickyNote.Server
             builder.Services.AddSingleton<StickyNoteDbContext>();
             builder.Services.AddSingleton<IDAL<StickyNoteModel>, StickyNoteDal>();
             var app = builder.Build();
+
+            // We could bundle QOS and Audit in an extension
+            app.UseMiddleware<QOSMiddleware>();
+            app.UseMiddleware<AuditMiddleware>();
+
+
             app.UseCors("test");
             app.UseDefaultFiles();
             app.UseStaticFiles();
